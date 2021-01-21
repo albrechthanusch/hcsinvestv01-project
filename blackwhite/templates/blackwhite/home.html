@@ -1,0 +1,25 @@
+{% extends "blackwhite/base.html" %} {% block content %}
+<br> {% load static %}
+<div class="row justify-content-center mt-5">
+
+    <div class="col-md-7 text-center">
+        <iframe src="{% static 'blackwhite/Worldmap.svg' %}" width="100%" height="160%" class="d-inline-block align-top"></iframe>
+        <!-- <h1>Welcome to hcsINVEST</h1> -->
+        <p>hcsINVEST serves a diverse range of clients - from individuals to institutions worldwide - who trust us. Providing you with facts to improve your investment decision process.</p>
+        <br>
+        <a role="button" class="btn btn-info btn-lg" href="{% url 'signupuser' %}">Start</a>
+
+        <br>
+        <br>
+        <br>
+        <!-- <br>
+        <br>
+        <img src="{% static 'blackwhite/Worldmap.svg' %}" type="image/svg+xml" width="100%" height="100%" class="d-inline-block align-top">
+        <br> -->
+
+
+    </div>
+
+</div>
+
+{% endblock %}
